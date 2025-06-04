@@ -81,6 +81,15 @@
           </div>
           <div>
               <h2>Mes projets</h2>
+              <div>
+                  <router-link to="/stage">
+                  <div class="content-box">
+                      <div>
+                          <p>Fiabilisation des flux Talend</p>
+                      </div>
+                  </div>
+                  </router-link>
+              </div>
           </div>
       </div>
   </div>
