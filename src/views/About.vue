@@ -153,10 +153,7 @@ export default {
     align-items: center;
     padding-left: 250px;
 }
-.content-little-box:hover {
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
+
 .content-sub-box {
     display: flex;
     justify-content: center;

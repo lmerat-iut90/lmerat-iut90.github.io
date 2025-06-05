@@ -84,8 +84,9 @@
               <div>
                   <router-link to="/stage">
                   <div class="content-box">
-                      <div>
+                      <div class="content-sub-box">
                           <p>Fiabilisation des flux Talend</p>
+                          <img alt="Zurflüh-Feller" src="../assets/ZF-logo.png" style="width: 200px">
                       </div>
                   </div>
                   </router-link>
@@ -103,6 +104,15 @@
 
 
 }
+.content-sub-box{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+}
+
+.content-sub-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
 .box{
     padding: 8px;
@@ -119,10 +129,6 @@
     border-radius: 360px;
 }
 
-.little-box:hover{
-    transform: scale(1.03);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
 
 .title{
     color: white;

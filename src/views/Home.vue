@@ -2,29 +2,25 @@
     <div class="home-container">
         <h1>Leslie MERAT</h1>
         <h2>Étudiante en BUT informatique</h2>
+
         <div class="content-wrapper">
-            <router-link to="/about" >
-                <img alt="Leslie MERAT" src="../assets/Photo.jpg" class="profile-image clickable-image">
-            </router-link>
-
-
-            <div class="text-content">
-                <router-link to="/work" >
-                    <img alt="Projets" src="../assets/code.jpeg" class="profile-image2 clickable-image">
+            <div class="image-wrapper">
+                <router-link to="/about">
+                    <img alt="Info" src="../assets/Photo.jpg" class="profile-image clickable-image" />
+                    <div class="image-text">À propos de moi</div>
                 </router-link>
-
             </div>
 
+            <div class="image-wrapper">
+                <router-link to="/work">
+                    <img alt="Projets" src="../assets/code.jpeg" class="profile-image2 clickable-image" />
+                    <div class="image-text">Portfolio</div>
+                </router-link>
+            </div>
         </div>
-        <div class="bottom">
-            <router-link to="/contact">
-                <img alt="Leslie MERAT" src="../assets/contact.png" class="profile-image3 clickable-image">
-            </router-link>
-        </div>
-
-
     </div>
 </template>
+
 
 <script>
 export default {
@@ -41,31 +37,40 @@ export default {
 
 .content-wrapper {
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
-
-
 
 .profile-image {
-    width: 400px;
+    display: block;
+    width: 350px;
     height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.profile-image2 {
-    width: 730px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.image-wrapper {
+    position: relative;
+    display: inline-block;
 }
-.profile-image3 {
-    width: 150px;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
+.profile-image2 {
+    display: block;
+    width: 750px;
+    height: auto;
 }
+
+.image-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    pointer-events: none;  /* pour que le clic passe à travers le texte */
+}
+
+
 
 .clickable-image {
     cursor: pointer;
@@ -77,14 +82,6 @@ export default {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.text-content {
-    max-width: 600px;
-}
-.bottom {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 100px;
-}
 
 h1 {
     font-size: 2.5rem;
