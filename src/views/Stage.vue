@@ -13,7 +13,8 @@
       <div>
           <h3>Présentation du sujet</h3>
           <div>
-              <p></p>
+              <p>Talend est un logiciel de gestion de données qui utilise un processus ETL (Extract, Transform, Load). Ce processus permet de transformer des données brutes en informations exploitables pour la Business Intelligence.<br>
+                  À mon arrivée dans l'entreprise, le traitement des données durait environ 2h30. Une fois ce traitement effectué, les données transformées sont récupérées par le logiciel Tableau, qui les utilise pour produire des visualisations sous forme de graphiques, de tableaux, et d'autres représentations visuelles.</p>
           </div>
       </div>
   </div>
@@ -38,6 +39,11 @@ h3 {
     text-align: left;
     padding-left: 20px;
     color: black;
+}
+
+p{
+    padding: 20px;
+    text-align: left;
 }
 </style>
 <script setup>
