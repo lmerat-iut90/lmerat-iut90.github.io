@@ -1,8 +1,10 @@
 # lmerat-iut90.github.io
 https://lmerat-iut90.github.io/
 
-## Build 
+## Github Page
+rm -rf dist
 npm run build
-
-## Deploy
+cp -r dist/* ./
+COMMIT/PUSH
+npm run build
 npm run deploy

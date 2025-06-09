@@ -12,11 +12,11 @@
 <style scoped>
 .projects {
     padding: 100px 20px;
-    background-color: #212F3D;
+    background-color: #F4F6F7;
     text-align: center;
 }
 h1,h2,p {
-    color: #F4F6F7;
+    color: #1F618D;
 }
 .projects h1{
     font-size: 3em;

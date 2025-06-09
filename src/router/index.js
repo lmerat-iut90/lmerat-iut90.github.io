@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 
-import Home from './views/Home.vue';      // Exemple de vue
-import Projects from './views/Projects.vue'; // Exemple
-import Contact from './views/Contact.vue';   // Exemple
+import Home from './views/Home.vue';
+import Projects from './views/Projects.vue';
+import Contact from './views/Contact.vue';
 
 Vue.use(VueRouter);
 

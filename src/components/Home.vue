@@ -1,9 +1,10 @@
-<!-- components/Home.vue -->
+
 <template>
     <div class="home">
-        <h1>Bienvenue sur mon portfolio</h1>
+        <img src="@/assets/Photo.jpg" alt="Photo de Leslie MERAT" class="profile-img" />
+        <h1>Bienvenue sur mon portfolio !</h1>
         <h2>Leslie MERAT</h2>
-        <p>Bonjour ! Je m'appelle Leslie MERAT, je suis actuellement en deuxième année de BUT informatique à l'IUT Nord Franche-Comté. Passionnée par le développement logiciel et des technologies web, je me spécialise dans la conception d’applications robustes, performantes et adaptées aux besoins des utilisateurs.</p>
+        <p>Bonjour ! Je m'appelle Leslie MERAT et je suis actuellement en deuxième année de BUT Informatique à l'IUT Nord Franche-Comté. À travers ce portfolio, je souhaite vous partager mon expérience en entreprise, acquise lors de mon stage de deuxième année.</p>
     </div>
 </template>
 
@@ -15,22 +16,33 @@
     align-items: center;
     min-height: 100vh;
     padding-top: 60px;
-    background: #212F3D;
+    background: #F4F6F7;
     color: white;
     text-align: center;
 }
 .home h1 {
     font-size: 3em;
     margin-bottom: 20px;
-    color: #F4F6F7;
+    color: #1F618D;
 }
 .home h2 {
     font-size: 2.5em;
-    color: #F4F6F7;
+    color: #1F618D;
 }
 .home p {
     font-size: 1.2em;
     max-width: 600px;
-    color: #F4F6F7;
+    color: #1F618D;
 }
+
+.profile-img {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    width: 250px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 </style>
