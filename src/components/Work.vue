@@ -2,9 +2,14 @@
   <div class="projects">
       <h1>Présentation de ma mission</h1>
       <h2>Fiabilisation des flux Talend</h2>
-      <p>Talend est un logiciel de gestion de données qui utilise un processus ETL (Extract, Transform, Load). Ce processus permet de transformer des données brutes en informations exploitables pour la Business Intelligence.<br>
-          À mon arrivée dans l'entreprise, le traitement des données durait environ 2h30. Une fois ce traitement effectué, les données transformées sont récupérées par le logiciel Tableau, qui les utilise pour produire des visualisations sous forme de graphiques, de tableaux, et d'autres représentations visuelles.
-          Mon objectif était de fiabiliser et d’optimiser les flux afin de minimiser les erreurs lors de l’exécution des traitements, tout en réduisant leur temps d’exécution.</p>
+      <p>Talend est un logiciel de gestion de données qui repose sur un processus ETL (Extract, Transform, Load). Ce processus permet de transformer des données brutes en informations exploitables pour la Business Intelligence.
+
+          À mon arrivée dans l'entreprise, le traitement complet des données durait environ 2h30. Une fois ce traitement terminé, les données transformées étaient récupérées par le logiciel Tableau, qui les utilisait pour produire des visualisations : graphiques, tableaux, et autres représentations visuelles.
+
+          Un des problèmes majeurs identifiés concernait l’irrégularité des temps d’exécution : certains processus, normalement exécutés en 5 minutes, pouvaient exceptionnellement prendre jusqu’à 1 heure, sans raison apparente.
+
+          Mon objectif principal était donc de fiabiliser et optimiser les flux Talend afin de réduire ces irrégularités, limiter les erreurs d’exécution, et améliorer globalement les performances, notamment en raccourcissant les durées de traitement.</p>
+
 
   </div>
 </template>
@@ -25,7 +30,8 @@ h1,h2,p {
     font-size: 2.5em;
 }
 .projects p {
-    max-width: 700px;
+    font-size: 1.2em;
+    max-width: 1000px;
     margin: auto;
     line-height: 1.6;
 }
