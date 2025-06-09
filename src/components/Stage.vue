@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="skills">
       <h1>Fiabilisation des flux Talend</h1>
       <h2>Zurflüh-Feller</h2>
 
@@ -21,30 +21,19 @@
 </template>
 
 <style scoped>
-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #2c3e50;
-}
-
-h2 {
-    color: #1F618D;
-    font-weight: normal;
+.skills {
+    padding: 100px 20px;
+    background-color: #f0f0f0;
     text-align: center;
-    margin: 0;
-    padding-top: 40px;
-    padding-bottom: 20px;
 }
-h3 {
-    text-align: left;
-    padding-left: 20px;
-    color: black;
+.skills ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
 }
-
-p{
-    padding: 20px;
-    text-align: left;
+.skills li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #444;
 }
 </style>
-<script setup>
-</script>

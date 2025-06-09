@@ -1,34 +1,37 @@
-
+<!-- App.vue -->
 <template>
     <div id="app">
-        <NavBar />
-        <router-view></router-view>
-        <FooterVue/>
+        <Navbar />
+        <main>
+            <section id="home"><Home /></section>
+            <section id="about"><Entreprise /></section>
+            <section id="projects"><Work /></section>
+            <section id="skills"><Stage /></section>
+        </main>
     </div>
 </template>
 
 <script>
-
-
-import NavBar from "@/components/NavBar.vue";
-import FooterVue from "@/components/FooterVue.vue";
+import Navbar from './components/NavBar.vue'
+import Home from './components/Home.vue'
+import Entreprise from './components/About.vue'
+import Work from './components/Work.vue'
+import Stage from './components/Stage.vue'
 
 export default {
-  name: 'App',
-  components: {
-      FooterVue,
-      NavBar
-  }
+    components: { Navbar, Home, Entreprise, Work, Stage }
 }
 </script>
 
-<style scoped>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style>
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+section {
+    scroll-margin-top: 80px;
 }
 </style>
