@@ -8,3 +8,4 @@ cp -r dist/* ./
 COMMIT/PUSH
 npm run build
 npm run deploy
+
