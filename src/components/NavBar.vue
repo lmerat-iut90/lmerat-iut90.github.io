@@ -18,6 +18,7 @@
     padding: 15px 0;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 .navbar ul {
     display: flex;
@@ -34,6 +35,6 @@
     transition: color 0.3s;
 }
 .navbar a:hover {
-    color: #00bcd4;
+    color: darkgray;
 }
 </style>
