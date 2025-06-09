@@ -16,14 +16,17 @@
 }
 .about h1{
     font-size: 3em;
+    color: #1F618D;
 }
 .about h2 {
     font-size: 2.5em;
+    color: #1F618D;
 }
 .about p {
     max-width: 700px;
     margin: auto;
     line-height: 1.6;
+    color: #1F618D;
 }
 </style>
 <script setup>

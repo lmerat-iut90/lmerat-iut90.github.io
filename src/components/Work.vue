@@ -16,10 +16,7 @@
     text-align: center;
 }
 h1,h2,p {
-    color: white;
-}
-.projects p {
-    margin: auto;
+    color: #F4F6F7;
 }
 .projects h1{
     font-size: 3em;

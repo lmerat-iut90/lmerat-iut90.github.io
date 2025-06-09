@@ -22,6 +22,7 @@
 .home h1 {
     font-size: 3em;
     margin-bottom: 20px;
+    color: #F4F6F7;
 }
 .home h2 {
     font-size: 2.5em;
@@ -30,5 +31,6 @@
 .home p {
     font-size: 1.2em;
     max-width: 600px;
+    color: #F4F6F7;
 }
 </style>
