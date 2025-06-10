@@ -21,7 +21,7 @@
         <br>
         <h3>L'organigramme</h3>
         <div>
-            <img src="@/assets/Orga.png" alt="Orga">
+            <img src="@/assets/Orga.png" alt="Orga" class="img-orga">
             <p><em>Figure 1 : Organigramme général de Zurflüh-Feller</em></p>
         </div>
         <div>
@@ -76,7 +76,10 @@
     width: 100px;
     height: auto;
 }
-
+.img-orga {
+    width: 200px;
+    height: auto;
+}
 </style>
 <script setup>
 </script>
