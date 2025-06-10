@@ -24,6 +24,7 @@
             <img src="@/assets/Orga.png" alt="Orga" class="img-orga">
             <p><em>Figure 1 : Organigramme général de Zurflüh-Feller</em></p>
         </div>
+        <br>
         <div>
             <img src="@/assets/org-zoom.png" alt="Orga-zoom">
             <p><em>Figure 2 : Zoom sur l'organigramme</em></p>
@@ -77,7 +78,7 @@
     height: auto;
 }
 .img-orga {
-    width: 200px;
+    width: 850px;
     height: auto;
 }
 </style>
