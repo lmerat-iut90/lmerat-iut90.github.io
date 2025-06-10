@@ -31,18 +31,29 @@
       <h3>AC 3 : Organiser la restitution de données à travers la programmation et la visualisation</h3>
       <p>Tu peux parler de la manière dont les résultats des traitements sont exploités ou mis à disposition, même si ce n'est pas sous forme de graphiques.
 
-          J'ai organisé la restitution des données traitées via la création de flux de sortie cohérents et réutilisables dans Talend. J'ai utilisé les composants de transformation et de formatage pour structurer les résultats de façon exploitable, facilitant leur intégration dans d'autres systèmes métiers ou outils de reporting internes. (avant/après tableau pour ratio, email avec et sans excel, cartographie)</p>
-      
+          J'ai organisé la restitution des données traitées via la création de flux de sortie cohérents et réutilisables dans Talend. J'ai utilisé les composants de transformation et de formatage pour structurer les résultats de façon exploitable, facilitant leur intégration dans d'autres systèmes métiers ou outils de reporting internes. (avant/après tableau pour ratio, email avec et sans excel)</p>
+      <div>
+        <p><em>Figure 8 : Heures badgées et heures gammes</em></p>
+      </div>
+    <div>
+      <p><em>Figure 9 : Attendu de rendu avec ratio des heures de production</em></p>
+    </div>
+    <div>
+      <p><em>Figure 10 : Email du chargement des données journalier</em></p>
+    </div>
+    <div>
+      <p><em>Figure 11 : Email du stock des produits chimique avec Excel</em></p>
+    </div>
     <h3>AC 4 : Manipuler des données hétérogènes</h3>
       <p>Ici, tu peux mettre en valeur le fait que Talend manipule des données provenant de sources variées (fichiers plats, bases de données, API, etc.).
           J'ai travaillé sur des flux manipulant des données issues de sources hétérogènes telles que des bases de données relationnelles (PostgreSQL, Oracle), des fichiers CSV, et des exports Excel. J'ai utilisé Talend pour standardiser, filtrer et transformer ces données, en assurant leur compatibilité avec les systèmes cibles. (csv + bases de données sql server + DBeaver)</p>
     <div>
       <img src="@/assets/organisation-flux.png" alt="Flux">
-      <p><em>Figure : Organisation des flux de données</em></p>
+      <p><em>Figure 12 : Organisation des flux de données</em></p>
     </div>
     <div>
       <img src="@/assets/DBeaver.png" alt="DBeaver">
-      <p><em>Figure : Interface du logiciel DBeaver</em></p>
+      <p><em>Figure 13 : Interface du logiciel DBeaver</em></p>
     </div>
   </div>
 </template>
