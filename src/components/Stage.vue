@@ -33,15 +33,19 @@
 
           J'ai organisé la restitution des données traitées via la création de flux de sortie cohérents et réutilisables dans Talend. J'ai utilisé les composants de transformation et de formatage pour structurer les résultats de façon exploitable, facilitant leur intégration dans d'autres systèmes métiers ou outils de reporting internes. (avant/après tableau pour ratio, email avec et sans excel)</p>
       <div>
+        <img src="@/assets/av.png" alt="Avant">
         <p><em>Figure 8 : Heures badgées et heures gammes</em></p>
       </div>
     <div>
+      <img src="@/assets/ap.png" alt="Attendu">
       <p><em>Figure 9 : Attendu de rendu avec ratio des heures de production</em></p>
     </div>
     <div>
+      <img src="@/assets/email-dwh.png" alt="DWH">
       <p><em>Figure 10 : Email du chargement des données journalier</em></p>
     </div>
     <div>
+      <img src="@/assets/email-stock.png" alt="Stock produit chimique">
       <p><em>Figure 11 : Email du stock des produits chimique avec Excel</em></p>
     </div>
     <h3>AC 4 : Manipuler des données hétérogènes</h3>
