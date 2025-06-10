@@ -21,12 +21,12 @@
         <br>
         <h3>L'organigramme</h3>
         <p>Voici l'organigramme général (figure 1), et ma place dans l'entreprise (figure 2).</p> <br>
-        <div>
+        <div class="img">
             <img src="@/assets/Orga.png" alt="Orga" class="img-orga">
             <p><em>Figure 1 : Organigramme général de Zurflüh-Feller</em></p>
         </div>
         <br>
-        <div>
+        <div class="img">
             <img src="@/assets/org-zoom.png" alt="Orga-zoom">
             <p><em>Figure 2 : Zoom sur l'organigramme</em></p>
         </div>
@@ -55,6 +55,7 @@
     margin: auto;
     line-height: 1.6;
     color: #F4F6F7;
+    text-align: justify;
 }
 .about h3 {
     font-size: 2em;
@@ -81,6 +82,9 @@
 .img-orga {
     width: 850px;
     height: auto;
+}
+.img p {
+    text-align: center;
 }
 </style>
 <script setup>

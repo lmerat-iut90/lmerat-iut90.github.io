@@ -5,14 +5,14 @@
       <h3>1.1. Optimiser les modèles de données de l'entreprise</h3>
       <p>Lors de mon stage, j'ai été amené à intervenir sur plusieurs flux Talend afin d'améliorer leur fiabilité et optimiser les traitements. Cela a impliqué une analyse approfondie des modèles de données manipulés par les jobs, dans le but de rationaliser les schémas d'entrée et de sortie.
           J’ai notamment identifié des redondances dans les structures, supprimé des connexions inutilisées, et ajusté certains types de données pour améliorer les performances.</p>
-      <div><br>
+      <div class="img"><br>
         <img src="@/assets/fail-sage.png" alt="Job fail sage">
         <p><em>Figure 3 : Job qui échoue systématiquement</em></p>
       </div> <br>
       <p>Comme illustré en figure 3, j’ai remarqué qu’un job échouait systématiquement lors de son exécution. Après analyse, j’ai identifié que l’échec provenait d’une requête SQL incomplète utilisée dans le traitement.
           J’ai donc retravaillé cette requête pour qu’elle couvre correctement tous les cas nécessaires.</p>
       <br><br>
-      <div>
+      <div class="img">
         <img src="@/assets/fail-apiras.png" alt="Job fail apiras">
         <p><em>Figure 4 : Connexion avec Apiras qui échoue</em></p>
       </div><br>
@@ -23,13 +23,13 @@
       <h3>1.2. Assurer la confidentialité des données (intégrité et sécurité)</h3>
       <p>Même si je n’ai pas directement travaillé sur des mécanismes de chiffrement ou d’anonymisation, j’ai contribué à garantir l’intégrité et la cohérence des données tout au long des traitements Talend. Dans le cadre de la fiabilisation des flux, j’ai mis en place plusieurs contrôles de qualité visant à éviter les erreurs d’insertion ou de traitement.</p>
       <br>
-      <div>
+      <div class="img">
         <img src="@/assets/Isnull.png" alt="Gestion des valeurs nulles">
         <p><em>Figure 5 : Gestion des valeurs nulles</em></p>
       </div><br>
       <p>Parmi ces actions, j’ai intégré des vérifications spécifiques pour détecter et traiter les valeurs nulles, comme le montre la figure 5 ci-dessus. Grâce à l’utilisation de la fonction "ISNULL" dans SQL Server, j’ai pu m’assurer que les colonnes critiques ne contenaient pas de données manquantes pouvant provoquer des erreurs lors de leur traitement ou altérer la qualité des analyses.</p>
       <br><br>
-      <div>
+      <div class="img">
         <img src="@/assets/Substring.png" alt="Gestion de taille de chaîne">
         <p><em>Figure 6 : Gestion de taille de chaînes de caractères</em></p>
       </div><br>
@@ -44,18 +44,18 @@
 
          <br> Pour cela, j’ai structuré les flux de sortie en utilisant des composants de transformation et de formatage adaptés. Cela m’a permis d’organiser les résultats de manière cohérente, tout en répondant aux besoins spécifiques des utilisateurs.</p>
       <br>
-      <div>
+      <div class="img">
         <img src="@/assets/av.png" alt="Avant">
         <p><em>Figure 7 : Heures badgées et heures gammes</em></p>
       </div><br>
-    <div>
+    <div class="img">
       <img src="@/assets/ap.png" alt="Attendu" class="img-ratio">
       <p><em>Figure 8 : Attendu de rendu avec ratio des heures de production</em></p>
     </div><br>
       <p>La figure 7 illustre l’état initial des résultats : les heures badgées et les heures gammes par atelier étaient affichées séparément, sans possibilité d’en déduire rapidement un indicateur de performance. Les attentes, comme montré en figure 8, portaient sur un affichage consolidé, avec calcul du ratio de productivité (heures badgées / heures gammes).
           Par la suite, j’ai modifié la requête SQL utilisée afin d’obtenir un rendu structuré par jour avec les totaux par jour et les ratios associés, facilitant ainsi l’analyse dans l’outil Tableau.</p>
     <br><br>
-      <div>
+      <div class="img">
       <img src="@/assets/email-stock.png" alt="Stock produit chimique">
       <p><em>Figure 9 : Email du stock des produits chimique avec Excel</em></p>
     </div><br>
@@ -63,70 +63,81 @@
           Ce processus a permis de fiabiliser et d’automatiser la diffusion d’informations tout en respectant les formats attendus.</p><br>*
 
     <h3>1.4. Manipuler des données hétérogènes</h3>
-      <p>Ici, tu peux mettre en valeur le fait que Talend manipule des données provenant de sources variées (fichiers plats, bases de données, API, etc.).
-          J'ai travaillé sur des flux manipulant des données issues de sources hétérogènes telles que des bases de données relationnelles (PostgreSQL, Oracle), des fichiers CSV, et des exports Excel. J'ai utilisé Talend pour standardiser, filtrer et transformer ces données, en assurant leur compatibilité avec les systèmes cibles. (csv + bases de données sql server + DBeaver)</p>
-    <div>
+      <p>Au cours de mon stage, j’ai travaillé sur des flux Talend traitant des données issues de sources très variées. Ces données provenaient notamment de bases de données relationnelles (SQL Server), d’exports Excel, ainsi que de systèmes externes comme des ERP ou des dispositifs de badgeuse.<br>
+          Talend a permis d’unifier ces différentes sources de données à travers des processus de standardisation, de filtrage et de transformation. Ces étapes étaient essentielles pour assurer la compatibilité des données avec les systèmes cibles et pour garantir leur qualité.</p>
+    <br>
+      <div class="img">
       <img src="@/assets/organisation-flux.png" alt="Flux" class="img-flux">
       <p><em>Figure 10 : Organisation des flux de données</em></p>
     </div>
-    <div>
-      <img src="@/assets/DBeaver.png" alt="DBeaver" class="img-db">
-      <p><em>Figure 11 : Interface du logiciel DBeaver</em></p>
-    </div>
+      <br>
+    <p>La figure 10 illustre l’organisation générale des flux de données. On y voit que les sources — telles que les ERP ou les badgeuses — alimentent l’environnement Talend, qui se charge d’extraire, transformer et charger les données dans la base centrale de l’entreprise, appelée DatawareHouse. Ce DatawareHouse constitue le référentiel principal à partir duquel l’outil de visualisation Tableau vient interroger les données pour générer les tableaux de bord utilisés par les différents services.
 
-    <h2> Compétence 5 : Conduire un projet</h2>
+        <br>Cette architecture m’a permis de mieux comprendre la chaîne complète de valorisation des données, depuis leur collecte brute jusqu’à leur restitution sous forme de rapports exploitables.
+
+    </p>
+    <br>
+
+    <h2>2. Conduire un projet</h2>
     
-    <h3>AC 1 : Identifier les processus présents dans une organisation en vue d'améliorer les systèmes d'information</h3>
-    <p>Explication : Il s'agit d'analyser les processus métiers et techniques existants pour détecter les points d'amélioration dans les systèmes d'information.
-Application à ton stage (Fiabilisation des flux Talend) :
-Identifier les flux critiques : Lister les flux Talend existants, leur fréquence, leur importance pour l'entreprise.
-Analyser les problèmes récurrents : Erreurs de traitement, temps d'exécution trop longs, données corrompues, etc.
-Cartographier les dépendances : Quels systèmes sont impactés si un flux échoue ? (Bases de données, applications métiers, rapports BI).
-Exemple concret :
-"J'ai analysé 10 flux Talend critiques et identifié que 30% des échecs provenaient de problèmes de connexion à la base source. J'ai proposé une solution de reprise automatique."  (Python, fail, F01_800, cartographie tables, carthographie jobs)</p> 
-    <div>
+    <h3>2.1. Identifier les processus présents dans une organisation en vue d'améliorer les systèmes d'information</h3>
+    <p>L’objectif principal de mon stage a été de fiabiliser les flux de données existants dans l’entreprise. Pour cela, il était essentiel d’identifier les processus critiques, de comprendre leur fonctionnement, d’analyser leurs points faibles, puis de proposer des pistes d’amélioration.<br>
+        J’ai commencé par recenser et analyser les principaux jobs Talend utilisés en production. Cette analyse m’a permis de repérer ceux qui posaient le plus de problèmes, soit en raison de leur durée excessive, soit à cause d’erreurs systématiques. J’ai également étudié les dépendances entre les jobs, les bases de données et les systèmes métiers qu’ils alimentent.<br>
+        Afin d’automatiser cette analyse, j’ai développé un script Python qui interroge une base de données de suivi d’exécution, puis exporte les résultats en CSV.</p>
+    <br><div class="img">
         <img src="@/assets/F01_800.png" alt="Job d'une heure">
-        <p><em>Figure 12 : Résultat du script Python pour tous les temps du job le plus long</em></p>
+        <p><em>Figure 11 : Résultat du script Python pour tous les temps du job le plus long</em></p>
     </div>
-    <div>
+      <br>
+      <p>La figure 11 montre un exemple de sortie de ce script : ici, le job identifié est celui ayant la plus longue durée d’exécution (environ 1 heure). Ce type d'information m’a permis de cibler les flux à optimiser en priorité.</p>
+      <br><br>
+    <div class="img">
         <img src="@/assets/F02_900.png" alt="Job erreur">
-        <p><em>Figure 13 : Résultat du script Python pour le job qui échoue systématiquement</em></p>
+        <p><em>Figure 12 : Résultat du script Python pour le job qui échoue systématiquement</em></p>
     </div>
-    <div>
+      <br>
+      <p>La figure 12 illustre un autre cas détecté : un job échouant systématiquement, déjà identifié précédemment en figure 3. C’est grâce au script Python, et avec l’aide de Tanguy, que nous avons constaté que les données liées à ce job ne s’affichaient plus depuis le mois de février.</p>
+    <br><br>
+      <div class="img">
         <img src="@/assets/Arbo_job.png" alt="Arborescence" class="img-arb">
-        <p><em>Figure 14 : Arborescence des Jobs</em></p>
-    </div>
-    <div>
+        <p><em>Figure 13 : Arborescence des Jobs</em></p>
+    </div><br>
+      <p>Pour mieux comprendre les dépendances entre les traitements, j’ai aussi réalisé une arborescence des jobs (figure 13), sous forme d’un fichier Excel. Ce document recense quels jobs en appellent d’autres, ce qui est très utile pour identifier rapidement dans quel job maître se trouve un sous-job donné.
+          Cela facilite le diagnostic des erreurs et la maintenance par les autres membres de l’équipe. Ici la figure 13 ne représente pas toute l'arborescence, pour permettre plus de lisibilité</p>
+      <br><br>
+    <div class="img">
         <img src="@/assets/Cartographie_table.png" alt="Cartographie" class="img_fail">
-        <p><em>Figure 15 : Cartographie des relations des tables</em></p>
-    </div>
+        <p><em>Figure 14 : Cartographie des relations des tables</em></p>
+    </div><br>
+      <p>Enfin, pour compléter cette analyse des processus, j’ai également réalisé une cartographie des tables utilisées (figure 14) dans un fichier Excel. Ce schéma met en évidence les relations entre les différentes tables, en indiquant clairement quelles tables sont alimentées par quels traitements.
+          Cela m’a permis de mieux comprendre l’impact de chaque flux sur le système d’information global.</p>
+      <br>
 
-    <h3>AC 2 : Formaliser les besoins du client et de l'utilisateur</h3>
-    <p>Explication : Recueillir et structurer les attentes des parties prenantes (métier, équipe IT, etc.).
-Application à ton stage :
-Interviews/questionnaires : Demander aux utilisateurs quels flux posent problème et quelles sont leurs attentes (ex : notifications en cas d'échec, temps de traitement réduit).
-Cas d'usage :
-"Les équipes métier ont exprimé le besoin de recevoir des alertes SMS en cas d'échec d'un flux générant des données pour la paie. J'ai documenté ce besoin et proposé une intégration avec un outil comme Slack ou PagerDuty."
-Livrable : Un tableau de besoins classés par priorité (ex : fiabilité, rapidité, traçabilité).  (mail dwh)</p>
-    <div>
+    <h3>2.2. Formaliser les besoins du client et de l'utilisateur</h3>
+    <p>Un aspect important de mon stage a été la prise en compte des attentes des utilisateurs finaux, notamment les équipes métier, afin d'améliorer la fiabilité et la lisibilité des flux Talend. Pour cela, j’ai échangé régulièrement avec mon tuteur et les utilisateurs concernés afin de comprendre leurs besoins concrets, qu’il s’agisse de visibilité sur les traitements, de réactivité en cas d’erreur ou encore de simplification des vérifications manuelles.<br>
+        L’un des cas les plus significatifs concerne le suivi quotidien du chargement des données dans le DataWarehouse. Jusqu’alors, cette vérification était effectuée manuellement chaque matin par mon tuteur, ce qui était à la fois chronophage et source potentielle d’erreurs d’inattention.</p>
+    <br>
+      <div class="img">
       <img src="@/assets/email-dwh.png" alt="DWH">
-      <p><em>Figure  16 : Email du chargement des données journalier</em></p>
-    </div>
+      <p><em>Figure  15 : Email du chargement des données journalier</em></p>
+    </div> <br>
+      <p>Pour répondre à ce besoin, j’ai conçu un job Talend capable d’exécuter automatiquement une requête SQL Server pour vérifier si les jobs maîtres se sont bien exécutés, et s’il y a eu des erreurs dans l’un des traitements. Les résultats de cette vérification sont ensuite formatés dans un email envoyé automatiquement chaque matin aux personnes concernées (Julien et moi).<br>
+          La figure 15 présente un exemple de cet email automatique. Ce flux a été le plus complexe que j’ai eu à développer durant mon stage, mais également le plus formateur. Il m’a permis de me familiariser en profondeur avec Talend (gestion de flux conditionnels, composants de traitement, envoi d’emails, etc.) tout en apportant une réelle valeur ajoutée à l’équipe : le processus est désormais automatisé, plus fiable, et plus rapide.</p>
+      <br>
 
-    <h3>AC 4 : Définir et mettre en œuvre une démarche de suivi de projet</h3>
-    <p>Explication : Planifier, suivre et rendre compte de l'avancement.
-Application à ton stage :
-Outils de suivi :
-Créer un tableau Kanban (Trello, Jira) avec les tâches : "Analyse des flux", "Tests de fiabilité", "Déploiement".
-Utiliser Git pour versionner les jobs Talend modifiés.
-Indicateurs :
-"J'ai réduit le taux d'échec des flux de 40% à 5% en 2 mois, avec des rapports hebdomadaires partagés via Power BI."
-Rétrospective :
-Organiser une réunion bilan pour présenter les améliorations et les axes d'évolution.  (Réunion Tanguy après problème)</p>
-    <div>
+    <h3>2.3. Définir et mettre en œuvre une démarche de suivi de projet</h3>
+    <p>Des comptes rendus réguliers étaient partagés avec mon tuteur et l’équipe, notamment via des récapitulatifs hebdomadaires ou des réunions ponctuelles en cas de problème bloquant.
+      <br>
+        L’un de ces problèmes est illustré dans la figure ci-dessous :</p><br>
+    <div class="img">
         <img src="@/assets/F01_105.png" alt="Job millieu">
-        <p><em>Figure 17 : Visualisation du chevauchement des jobs</em></p>
-    </div>
+        <p><em>Figure 16 : Visualisation du chevauchement des jobs</em></p>
+    </div><br>
+      <p>La figure 16 met en évidence un phénomène de chevauchement des traitements, à l’origine de ralentissements importants. Le job F01_800_Ventilation, l’un des plus longs à s’exécuter (environ 1h), est appelé par le job maître F01_105_Import_Ventilation. Le problème identifié est que, durant son exécution, un autre job démarre en parallèle alors que Talend ne peut gérer qu’un seul traitement par instance à la fois. Cela provoque un allongement du temps de traitement de ce second job, jusqu’à une heure de plus que la normale.
+          <br>
+          Pour résoudre ce problème, Julien et moi avons pris rendez-vous avec Tanguy afin de lui présenter la situation. Ensemble, nous avons décidé de réorganiser l’ordre d’exécution des jobs : le job concerné sera désormais déplacé en fin de traitement, après l’exécution des jobs prioritaires, afin de garantir une meilleure fluidité globale du flux Talend.
+          <br>
+          Cette démarche de suivi m’a permis de mieux comprendre la gestion des ressources dans un ETL en production, ainsi que l’importance de la coordination entre les traitements dans un environnement contraint.</p>
 
     
   </div>
@@ -144,6 +155,7 @@ Organiser une réunion bilan pour présenter les améliorations et les axes d'é
     max-width: 1000px;
     margin: auto;
     line-height: 1.6;
+    text-align: justify;
 }
 .skills h1{
     font-size: 3em;
@@ -161,10 +173,7 @@ Organiser une réunion bilan pour présenter les améliorations et les axes d'é
     width: 650px;
     height: auto;
 }
-.img-db {
-    width: 900px;
-    height: auto;
-}
+
 .img_fail{
     width: 1250px;
     height: auto;
@@ -176,6 +185,9 @@ Organiser une réunion bilan pour présenter les améliorations et les axes d'é
 .img-ratio {
     width: 500px;
     height: auto;
+}
+.img p {
+    text-align: center;
 }
 </style>
 <script setup>

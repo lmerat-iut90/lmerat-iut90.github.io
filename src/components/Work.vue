@@ -36,5 +36,6 @@ h1,h2,p {
     max-width: 1000px;
     margin: auto;
     line-height: 1.6;
+    text-align: justify;
 }
 </style>
