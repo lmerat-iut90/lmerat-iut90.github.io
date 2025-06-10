@@ -4,7 +4,7 @@
         <img src="@/assets/Photo.jpg" alt="Photo de Leslie MERAT" class="profile-img" />
         <h1>Bienvenue sur mon portfolio !</h1>
         <h2>Leslie MERAT</h2>
-        <p>Bonjour ! Je m'appelle Leslie MERAT et je suis actuellement en deuxième année de BUT Informatique à l'IUT Nord Franche-Comté. À travers ce portfolio, je souhaite vous partager mon expérience en entreprise, acquise lors de mon stage de deuxième année.</p>
+        <p>Bonjour ! Je m'appelle Leslie MERAT et je suis actuellement en deuxième année de BUT Informatique à l'IUT Nord Franche-Comté. À travers ce portfolio, je souhaite vous partager mon expérience en entreprise, acquise lors de mon stage de BUT2.</p>
     </div>
 </template>
 
