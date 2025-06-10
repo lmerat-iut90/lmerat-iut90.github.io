@@ -4,7 +4,7 @@
       <h2>Compétence 4 : Gérer des données de l'information</h2>
       <h3>AC 1 : Optimiser les modèles de données de l'entreprise</h3>
       <p>Tu peux parler ici des actions que tu as menées pour améliorer ou adapter les modèles de données utilisés dans les flux Talend. Par exemple :
-          Lors de mon stage, j'ai participé à la fiabilisation de plusieurs flux Talend en analysant les structures de données manipulées. J'ai proposé des améliorations sur les schémas d'entrée/sortie pour réduire la redondance et optimiser les performances des traitements, notamment en rationalisant certains types de données et en nettoyant les structures inutilisées.</p>
+          Lors de mon stage, j'ai participé à la fiabilisation de plusieurs flux Talend en analysant les structures de données manipulées. J'ai proposé des améliorations sur les schémas d'entrée/sortie pour réduire la redondance et optimiser les performances des traitements, notamment en rationalisant certains types de données et en nettoyant les structures inutilisées. (connexions en trop enlevé)</p>
 
       <h3>AC 2 : Assurer la confidentialité des données (intégrité et sécurité)</h3>
       <p>Même si tu ne traitais peut-être pas directement de chiffrement ou d’anonymisation, tu peux mentionner les pratiques mises en place pour garantir que les données restent cohérentes, non corrompues, et bien gérées :
