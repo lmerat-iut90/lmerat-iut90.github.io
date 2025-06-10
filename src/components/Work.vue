@@ -11,11 +11,6 @@ Un des problèmes majeurs identifiés concernait l’irrégularité des temps d�
 Cette instabilité avait un impact direct sur la qualité des restitutions dans Tableau : lorsque les flux prenaient trop de temps, le logiciel risquait de ne pas récupérer l’ensemble des données nécessaires à la génération des tableaux de bord, compromettant ainsi la fiabilité des analyses produites.
 
 Mon objectif principal était donc de fiabiliser et optimiser les flux Talend afin de réduire ces irrégularités, limiter les erreurs d’exécution, et améliorer globalement les performances, notamment en raccourcissant les durées de traitement.</p>
-      <br>
-      <div>
-      <img src="@/assets/organisation-flux.png" alt="flux" class="img-flux">
-      <p><em>Figure 3 : Organisation des flux de données</em></p>
-    </div>
     
 
   </div>
@@ -41,9 +36,5 @@ h1,h2,p {
     max-width: 1000px;
     margin: auto;
     line-height: 1.6;
-}
-.img-flux {
-    width: 650px;
-    height: auto;
 }
 </style>
