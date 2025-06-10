@@ -56,7 +56,7 @@
       <p><em>Figure 12 : Interface du logiciel DBeaver</em></p>
     </div>
 
-    <h2> Compétence 6 : Conduire un projet</h2>
+    <h2> Compétence 5 : Conduire un projet</h2>
     
     <h3>AC 1 : Identifier les processus présents dans une organisation en vue d'améliorer les systèmes d'information</h3>
     <p>Explication : Il s'agit d'analyser les processus métiers et techniques existants pour détecter les points d'amélioration dans les systèmes d'information.
