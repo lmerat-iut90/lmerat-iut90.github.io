@@ -67,6 +67,8 @@ Cartographier les dépendances : Quels systèmes sont impactés si un flux écho
 Exemple concret :
 "J'ai analysé 10 flux Talend critiques et identifié que 30% des échecs provenaient de problèmes de connexion à la base source. J'ai proposé une solution de reprise automatique."  (Python, fail, F01_800, cartographie tables, carthographie jobs)</p> 
 
+    <p>F01_800.png</p>
+
     <h3>AC 2 : Formaliser les besoins du client et de l'utilisateur</h3>
     <p>Explication : Recueillir et structurer les attentes des parties prenantes (métier, équipe IT, etc.).
 Application à ton stage :
@@ -89,6 +91,8 @@ Indicateurs :
 "J'ai réduit le taux d'échec des flux de 40% à 5% en 2 mois, avec des rapports hebdomadaires partagés via Power BI."
 Rétrospective :
 Organiser une réunion bilan pour présenter les améliorations et les axes d'évolution.  (Réunion Tanguy après problème)</p>
+
+    <p>F01_105.png</p>
     
   </div>
 </template>
