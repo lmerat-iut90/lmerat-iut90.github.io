@@ -10,8 +10,18 @@ Un des problèmes majeurs identifiés concernait l’irrégularité des temps d�
 
 Cette instabilité avait un impact direct sur la qualité des restitutions dans Tableau : lorsque les flux prenaient trop de temps, le logiciel risquait de ne pas récupérer l’ensemble des données nécessaires à la génération des tableaux de bord, compromettant ainsi la fiabilité des analyses produites.
 
-Mon objectif principal était donc de fiabiliser et optimiser les flux Talend afin de réduire ces irrégularités, limiter les erreurs d’exécution, et améliorer globalement les performances, notamment en raccourcissant les durées de traitement.</p>
-    
+Mon objectif principal était donc de fiabiliser et optimiser les flux Talend afin de réduire ces irrégularités, limiter les erreurs d’exécution, et améliorer globalement les performances, notamment en raccourcissant les durées de traitement.</p><br><br>
+      <div class="liens-info">
+        <a href=" https://fr.wikipedia.org/wiki/Extract-transform-load" target="_blank" rel="noopener noreferrer">
+            Définition d'un ETL (Extract-Transform-Load)
+        </a><br>
+        <a href="https://axysweb.com/le-lexique-pour-comprendre-et-utiliser-le-studio-talend/#:~:text=Un%20job%20Talend%20est%20la,processus%20de%20flux%20de%20donn%C3%A9es." target="_blank" rel="noopener noreferrer">
+            Définition d'un Job Talend
+        </a>
+      </div>
+
+
+
 
   </div>
 </template>
@@ -38,4 +48,20 @@ h1,h2,p {
     line-height: 1.6;
     text-align: justify;
 }
+
+.liens-info a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #1abc9c;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.liens-info a:hover {
+    text-decoration: underline;
+    color: #E87722;
+}
 </style>
+<script setup>
+</script>

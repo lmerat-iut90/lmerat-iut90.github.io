@@ -15,6 +15,13 @@
             L'entreprise évolue dans le secteur de la fermeture du bâtiment, en tant que leader européen des composants pour volets roulants. Elle conçoit, fabrique et commercialise une large gamme de produits destinés aux professionnels du neuf et de la rénovation.
 
             Zurflüh-Feller emploie environ 400 salariés et réalise un chiffre d’affaires annuel d’environ 65 millions d’euros, dont 20 % à l’export. Elle est reconnue pour son savoir-faire industriel, son innovation (avec plusieurs brevets déposés), et sa forte capacité de production.</p>
+        <br><br>
+        <div class="liens-info">
+            <a href="https://www.zurfluh-feller.fr" target="_blank" rel="noopener noreferrer">
+                Site officiel de Zurflüh-Feller
+
+            </a>
+        </div>
         <br>
         <h3>L'équipe</h3>
         <p>J'ai intégré l'équipe informatique de l'entreprise, composée de <b>Julien VAUX</b> (Chargé de développement SI et mon tuteur), <b>Christophe HERMOSILLA</b> (Responsable IT), ainsi que <b>Christian RUI</b> et <b>Axel TESSIER</b> (Techniciens informatiques). Sous la tutelle de Julien, j’ai pu développer mes compétences liées aux données de l’information. J’ai également eu l’opportunité de collaborer avec d’autres personnes en dehors de l’équipe informatique, comme <b>Tanguy LODS</b> (Contôleur de gestion) ou encore <b>Sylvain BORDES</b> (Directeur financier).</p>
@@ -85,6 +92,20 @@
 }
 .img p {
     text-align: center;
+}
+
+.liens-info a {
+    display: inline-block;
+    margin: 10px 0;
+    color: #E87722;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.liens-info a:hover {
+    text-decoration: underline;
+    color: #16a085;
 }
 </style>
 <script setup>
