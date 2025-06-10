@@ -20,6 +20,7 @@
         <p>J'ai intégré l'équipe informatique de l'entreprise, composée de <b>Julien VAUX</b> (Chargé de développement SI et mon tuteur), <b>Christophe HERMOSILLA</b> (Responsable IT), ainsi que <b>Christian RUI</b> et <b>Axel TESSIER</b> (Techniciens informatiques). Sous la tutelle de Julien, j’ai pu développer mes compétences liées aux données de l’information. J’ai également eu l’opportunité de collaborer avec d’autres personnes en dehors de l’équipe informatique, comme <b>Tanguy LODS</b> (Contôleur de gestion) ou encore <b>Sylvain BORDES</b> (Directeur financier).</p>
         <br>
         <h3>L'organigramme</h3>
+        <p>Voici l'organigramme général (figure 1), et ma place dans l'entreprise (figure 2).</p> <br>
         <div>
             <img src="@/assets/Orga.png" alt="Orga" class="img-orga">
             <p><em>Figure 1 : Organigramme général de Zurflüh-Feller</em></p>
