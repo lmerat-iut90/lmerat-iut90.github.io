@@ -21,37 +21,48 @@
       <br>
 
       <h3>1.2. Assurer la confidentialité des données (intégrité et sécurité)</h3>
-      <p>Même si tu ne traitais peut-être pas directement de chiffrement ou d’anonymisation, tu peux mentionner les pratiques mises en place pour garantir que les données restent cohérentes, non corrompues, et bien gérées :
-
-          Dans le cadre de la fiabilisation des flux, j'ai veillé à l'intégrité des données en mettant en place des contrôles de cohérence et de qualité (ex : vérification des valeurs nulles, gestion des doublons). J'ai aussi contribué à la gestion sécurisée des accès aux bases de données utilisées par les jobs Talend, en respectant les bonnes pratiques internes de sécurité.
-
-      </p>
+      <p>Même si je n’ai pas directement travaillé sur des mécanismes de chiffrement ou d’anonymisation, j’ai contribué à garantir l’intégrité et la cohérence des données tout au long des traitements Talend. Dans le cadre de la fiabilisation des flux, j’ai mis en place plusieurs contrôles de qualité visant à éviter les erreurs d’insertion ou de traitement.</p>
+      <br>
       <div>
         <img src="@/assets/Isnull.png" alt="Gestion des valeurs nulles">
         <p><em>Figure 5 : Gestion des valeurs nulles</em></p>
-      </div>
+      </div><br>
+      <p>Parmi ces actions, j’ai intégré des vérifications spécifiques pour détecter et traiter les valeurs nulles, comme le montre la figure 5 ci-dessus. Grâce à l’utilisation de la fonction "ISNULL" dans SQL Server, j’ai pu m’assurer que les colonnes critiques ne contenaient pas de données manquantes pouvant provoquer des erreurs lors de leur traitement ou altérer la qualité des analyses.</p>
+      <br><br>
       <div>
         <img src="@/assets/Substring.png" alt="Gestion de taille de chaîne">
         <p><em>Figure 6 : Gestion de taille de chaînes de caractères</em></p>
-      </div>
-    
-      <h3>AC 3 : Organiser la restitution de données à travers la programmation et la visualisation</h3>
-      <p>Tu peux parler de la manière dont les résultats des traitements sont exploités ou mis à disposition, même si ce n'est pas sous forme de graphiques.
+      </div><br>
+      <p>J’ai également dû faire face à un autre type de problème lié à la taille excessive de certaines chaînes de caractères. Ces chaînes dépassaient la taille maximale définie dans certaines colonnes des tables cibles, ce qui empêchait leur insertion. Pour y remédier, et avec l’accord de mon tuteur de stage, j’ai utilisé la fonction SUBSTRING de SQL Server afin de tronquer les données à une taille compatible, comme illustré en figure 6.
+          Cette solution a permis de préserver les traitements sans compromettre la structure des données.</p>
+      <br>
+      <p>Par ailleurs, j’ai veillé à respecter les bonnes pratiques de sécurité imposées en interne, notamment en ce qui concerne la gestion des accès aux bases de données utilisées par les jobs Talend. Cela inclut l’utilisation d’identifiants sécurisés, la limitation des droits d’accès selon les besoins des traitements, et la vérification régulière des connexions utilisées.</p>
+      <br>
 
-          J'ai organisé la restitution des données traitées via la création de flux de sortie cohérents et réutilisables dans Talend. J'ai utilisé les composants de transformation et de formatage pour structurer les résultats de façon exploitable, facilitant leur intégration dans d'autres systèmes métiers ou outils de reporting internes. (avant/après tableau pour ratio, email avec et sans excel)</p>
+      <h3>1.3. Organiser la restitution de données à travers la programmation et la visualisation</h3>
+      <p>Dans le cadre de mes missions, j’ai également travaillé sur la restitution des données issues des traitements Talend. L’objectif était de produire des sorties claires, exploitables et réutilisables, afin de faciliter leur intégration dans d'autres systèmes métiers ou outils de reporting internes.
+
+         <br> Pour cela, j’ai structuré les flux de sortie en utilisant des composants de transformation et de formatage adaptés. Cela m’a permis d’organiser les résultats de manière cohérente, tout en répondant aux besoins spécifiques des utilisateurs.</p>
+      <br>
       <div>
         <img src="@/assets/av.png" alt="Avant">
         <p><em>Figure 7 : Heures badgées et heures gammes</em></p>
-      </div>
+      </div><br>
     <div>
-      <img src="@/assets/ap.png" alt="Attendu">
+      <img src="@/assets/ap.png" alt="Attendu" class="img-ratio">
       <p><em>Figure 8 : Attendu de rendu avec ratio des heures de production</em></p>
-    </div>
-    <div>
+    </div><br>
+      <p>La figure 7 illustre l’état initial des résultats : les heures badgées et les heures gammes par atelier étaient affichées séparément, sans possibilité d’en déduire rapidement un indicateur de performance. Les attentes, comme montré en figure 8, portaient sur un affichage consolidé, avec calcul du ratio de productivité (heures badgées / heures gammes).
+          Par la suite, j’ai modifié la requête SQL utilisée afin d’obtenir un rendu structuré par jour avec les totaux par jour et les ratios associés, facilitant ainsi l’analyse dans l’outil Tableau.</p>
+    <br><br>
+      <div>
       <img src="@/assets/email-stock.png" alt="Stock produit chimique">
       <p><em>Figure 9 : Email du stock des produits chimique avec Excel</em></p>
-    </div>
-    <h3>AC 4 : Manipuler des données hétérogènes</h3>
+    </div><br>
+      <p>Comme le montre la figure 9, un email est envoyé automatiquement chaque mardi, contenant les données de stock sous forme de fichier Excel en pièce jointe. Pour cela, j’ai utilisé une requête SQL ciblant les produits concernés, puis Talend se chargeait de générer le fichier Excel et de l’envoyer par email aux destinataires concernés.
+          Ce processus a permis de fiabiliser et d’automatiser la diffusion d’informations tout en respectant les formats attendus.</p><br>*
+
+    <h3>1.4. Manipuler des données hétérogènes</h3>
       <p>Ici, tu peux mettre en valeur le fait que Talend manipule des données provenant de sources variées (fichiers plats, bases de données, API, etc.).
           J'ai travaillé sur des flux manipulant des données issues de sources hétérogènes telles que des bases de données relationnelles (PostgreSQL, Oracle), des fichiers CSV, et des exports Excel. J'ai utilisé Talend pour standardiser, filtrer et transformer ces données, en assurant leur compatibilité avec les systèmes cibles. (csv + bases de données sql server + DBeaver)</p>
     <div>
@@ -162,4 +173,10 @@ Organiser une réunion bilan pour présenter les améliorations et les axes d'é
     width: 1000px;
     height: auto;
 }
+.img-ratio {
+    width: 500px;
+    height: auto;
+}
 </style>
+<script setup>
+</script>
