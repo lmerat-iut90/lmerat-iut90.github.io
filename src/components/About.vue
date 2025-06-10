@@ -21,6 +21,10 @@
         <br>
         <h3>L'organigramme</h3>
         <div>
+            <img src="@/assets/Orga.png" alt="Orga">
+            <p><em>Figure 1 : Organigramme général de Zurflüh-Feller</em></p>
+        </div>
+        <div>
             <img src="@/assets/org-zoom.png" alt="Orga-zoom">
             <p><em>Figure 2 : Zoom sur l'organigramme</em></p>
         </div>
