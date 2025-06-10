@@ -12,7 +12,7 @@ Cette instabilité avait un impact direct sur la qualité des restitutions dans 
 
 Mon objectif principal était donc de fiabiliser et optimiser les flux Talend afin de réduire ces irrégularités, limiter les erreurs d’exécution, et améliorer globalement les performances, notamment en raccourcissant les durées de traitement.</p>
     <div>
-      <img ref="@assets/organisation-flux.png" alt="flux">
+      <img src="@/assets/organisation-flux.png" alt="flux">
       <p><em>Figure 3 : Organisation des flux de données</em></p>
     </div>
     
