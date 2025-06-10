@@ -59,6 +59,37 @@
       <img src="@/assets/DBeaver.png" alt="DBeaver">
       <p><em>Figure 13 : Interface du logiciel DBeaver</em></p>
     </div>
+
+    <h2> Compétence 6 : Conduire un projet</h2>
+    
+    <h3>AC 1 : Identifier les processus présents dans une organisation en vue d'améliorer les systèmes d'information</h3>
+    <p>Explication : Il s'agit d'analyser les processus métiers et techniques existants pour détecter les points d'amélioration dans les systèmes d'information.
+Application à ton stage (Fiabilisation des flux Talend) :
+Identifier les flux critiques : Lister les flux Talend existants, leur fréquence, leur importance pour l'entreprise.
+Analyser les problèmes récurrents : Erreurs de traitement, temps d'exécution trop longs, données corrompues, etc.
+Cartographier les dépendances : Quels systèmes sont impactés si un flux échoue ? (Bases de données, applications métiers, rapports BI).
+Exemple concret :
+"J'ai analysé 10 flux Talend critiques et identifié que 30% des échecs provenaient de problèmes de connexion à la base source. J'ai proposé une solution de reprise automatique."  (Python, fail, F01_800)</p> 
+
+    <h3>AC 2 : Formaliser les besoins du client et de l'utilisateur</h3>
+    <p>Explication : Recueillir et structurer les attentes des parties prenantes (métier, équipe IT, etc.).
+Application à ton stage :
+Interviews/questionnaires : Demander aux utilisateurs quels flux posent problème et quelles sont leurs attentes (ex : notifications en cas d'échec, temps de traitement réduit).
+Cas d'usage :
+"Les équipes métier ont exprimé le besoin de recevoir des alertes SMS en cas d'échec d'un flux générant des données pour la paie. J'ai documenté ce besoin et proposé une intégration avec un outil comme Slack ou PagerDuty."
+Livrable : Un tableau de besoins classés par priorité (ex : fiabilité, rapidité, traçabilité).  (reunion Tanguy)</p>
+
+    <h3>AC 4 : Définir et mettre en œuvre une démarche de suivi de projet</h3>
+    <p>Explication : Planifier, suivre et rendre compte de l'avancement.
+Application à ton stage :
+Outils de suivi :
+Créer un tableau Kanban (Trello, Jira) avec les tâches : "Analyse des flux", "Tests de fiabilité", "Déploiement".
+Utiliser Git pour versionner les jobs Talend modifiés.
+Indicateurs :
+"J'ai réduit le taux d'échec des flux de 40% à 5% en 2 mois, avec des rapports hebdomadaires partagés via Power BI."
+Rétrospective :
+Organiser une réunion bilan pour présenter les améliorations et les axes d'évolution.  (Réunion Tanguy après problème)</p>
+    
   </div>
 </template>
 
